@@ -17,7 +17,6 @@ const App = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer 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",
       },
       body: JSON.stringify({
         inputs: {
@@ -157,7 +156,8 @@ const App = () => {
           </div>
 
           <p className="info">
-            ChatGpppt ,MM 14 version. hello world all rights reserved.
+            Welcome to TalkBot! Type your message and press enter to start
+            chatting
           </p>
         </div>
       </section>

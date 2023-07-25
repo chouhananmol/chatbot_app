@@ -34,9 +34,6 @@ body {
 .history::-webkit-scrollbar {
     width: 10px;
   }
-
-
-
   
   .history li {
     list-style-type: none;
@@ -84,13 +81,6 @@ body {
   border-bottom: 1px solid #e6e6e6;
   background-color: #fff;  
 }
-
-/* .feed {
-    flex: 1;
-  overflow-y: auto;
-  max-height: calc(100vh - 100px); 
-  padding: 20px;
-} */
 
 .feed {
     overflow-y: auto;
