@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import botimg from "./assets/boticon.webp";
 import userimg from "./assets/user.jpg";
 
+const API_KEY = process.env.API_KEY;
+
 const App = () => {
   const [message, setMessage] = useState("");
   const [value, setValue] = useState("");
@@ -16,6 +18,7 @@ const App = () => {
     const options = {
       method: "POST",
       headers: {
+        Authorization: `Bearer ${API_KEY}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
