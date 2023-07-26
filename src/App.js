@@ -31,7 +31,10 @@ const App = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:7000/api", options);
+      const response = await fetch(
+        "https://chatbot-app-backend.vercel.app/api",
+        options
+      );
       const data = await response.json();
       // Update state with bot's response and conversation data
       setMessage(data.generated_text);
